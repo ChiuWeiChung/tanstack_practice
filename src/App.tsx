@@ -1,14 +1,14 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import { useEffect, useReducer, useState } from 'react'
+import { useEffect,  useState } from 'react'
 import './App.css'
 
 
-import { createColumnHelper,  getCoreRowModel, getPaginationRowModel, useReactTable } from '@tanstack/react-table';
+import { createColumnHelper,  getCoreRowModel, useReactTable } from '@tanstack/react-table';
 import { Box, Button } from '@mui/material';
 import TableTemplate from './components/TableTemplate';
 import { Person } from './FakeTableData/types';
 import { defaultData } from './FakeTableData';
-import { makeData } from './components/SomethingElse/makeData';
+// import { makeData } from './components/SomethingElse/makeData';
 
 
 
@@ -68,7 +68,7 @@ const columns = [
 ];
 
 function App() {
-  const [data, setData] = useState(() => [...defaultData]);
+  const [data, _setData] = useState(() => [...defaultData]);
   // console.log('makeData', makeData(100,5,3));
 
   const table = useReactTable({

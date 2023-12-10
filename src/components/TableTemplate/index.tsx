@@ -8,9 +8,9 @@ import TableRow from '@mui/material/TableRow';
 import TableFooter from '@mui/material/TableFooter';
 import Paper from '@mui/material/Paper';
 import { Table as TanstackTable, flexRender } from '@tanstack/react-table';
-import {  Pagination, Stack, TablePagination, TablePaginationOwnProps } from '@mui/material';
-import { UsePaginationProps } from '@mui/material/usePagination/usePagination';
-import { useEffect } from 'react';
+import {   Stack, TablePagination, TablePaginationOwnProps } from '@mui/material';
+// import { UsePaginationProps } from '@mui/material/usePagination/usePagination';
+// import { useEffect } from 'react';
 
 export type TableTemplate<T> = {
   table: TanstackTable<T>;
