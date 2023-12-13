@@ -4,7 +4,7 @@ import './App.css'
 
 
 import { createColumnHelper,  getCoreRowModel, useReactTable } from '@tanstack/react-table';
-import { Box, Button } from '@mui/material';
+import { Box, Button, Typography } from '@mui/material';
 import TableTemplate from './components/TableTemplate';
 import { Person } from './FakeTableData/types';
 import { defaultData } from './FakeTableData';
@@ -86,7 +86,10 @@ function App() {
     console.log('currentPageIndex', currentPageIndex);
   }, [currentPageIndex]);
   return (
+    <>
+    <Typography>hihi</Typography>
     <TableTemplate<Person> table={table} />
+    </>
   );
 }
 
