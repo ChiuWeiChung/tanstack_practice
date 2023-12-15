@@ -87,7 +87,7 @@ function App() {
   }, [currentPageIndex]);
   return (
     <>
-    <Typography>hihi</Typography>
+    <Typography>hihi 1215</Typography>
     <TableTemplate<Person> table={table} />
     </>
   );
